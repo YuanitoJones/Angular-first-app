@@ -1,0 +1,12 @@
+<div class="parentComponent">
+  <div class="row">
+    <div class="col-md-12">
+      <p>parent works!</p>
+      <input type="text" [(ngModel)]="channelNameInParent">
+    </div>
+    <p>{{isReceived}}</p>
+    <div class="col-md-12">
+      <app-child [channelName]="channelNameInParent" (sendMessageEmitter)="receiveMessage($event)" ></app-child>
+    </div>
+  </div>
+</div>

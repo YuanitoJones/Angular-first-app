@@ -1,0 +1,24 @@
+.divisibleMainContainer{
+  margin: 50px
+}
+
+.buttonsDiv{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+button{
+  align-self: flex-end;
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.numberAray{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numberInArray{
+  margin-left: 20px;
+  margin-right: 20px;
+}

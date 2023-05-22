@@ -1,0 +1,25 @@
+<div class="divisibleMainContainer">
+  <div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-6">
+      <p>Number divisible by {{divisibleNumber}}</p>
+    </div>
+    <div class="col-md-5">
+      <div class="buttonsDiv">
+        <button (click)="divisible(2)" >Divisible en 2</button>
+        <button (click)="divisible(3)">Divisible en 3</button>
+        <button (click)="divisible(5)">Divisible en 5</button>
+        <button (click)="divisible(10)">Divisible en 10</button>
+        <button (click)="divisible(1)">clear</button>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="numberAray">
+        <p *ngFor="let number of array"><span class="numberInArray" [ngStyle]="{
+          color: (number+1)%divisibleNumber === 0 ? 'green' : 'red',
+          backgroundColor: (number+1)%divisibleNumber === 0 ? 'white' : 'beige'
+        }" >{{number + 1}}</span></p>
+      </div>
+    </div>
+  </div>
+</div>
